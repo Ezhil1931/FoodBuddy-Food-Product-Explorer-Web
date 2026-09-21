@@ -104,7 +104,7 @@ git clone <your-github-repository-url>
 ### 2. Navigate to the project
 
 ```bash
-cd foodlens
+cd foodbuddy
 ```
 
 ### 3. Install dependencies
