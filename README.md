@@ -185,6 +185,6 @@ FoodBuddy-Food-Product-Explorer-Web is a portfolio project using locally stored 
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Ezhilarasan**
 
 Built with ❤️ using React.js, Tailwind CSS, and local product data.
