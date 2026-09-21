@@ -181,7 +181,7 @@ New products can be added by updating the local product dataset.
 
 ## ⚠️ Disclaimer
 
-FoodLens is a portfolio project using locally stored product information. Product information is provided for demonstration purposes and may not represent the actual specifications of commercial products.
+FoodBuddy is a portfolio project using locally stored product information. Product information is provided for demonstration purposes and may not represent the actual specifications of commercial products.
 
 ## 👨‍💻 Author
 
