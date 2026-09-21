@@ -1,0 +1,890 @@
+Build a complete, modern, production-quality **Grocery Food Product Catalog Website** using React.
+
+## MAIN GOAL
+
+Create a professional grocery/food product information website where users can:
+
+* Browse all food/grocery products
+* Search products
+* Filter products by category
+* Filter by brand, price, rating, dietary type, and availability
+* View product images
+* View complete product details
+* View ingredients in plain text
+* Copy ingredients with one click
+* Copy complete product information with one click
+* View nutrition information
+* View product specifications
+* Explore categories
+* Read an About/Project page
+* Contact the project/company
+* Use the website comfortably on mobile, tablet, and desktop
+
+This is **NOT an e-commerce purchasing website yet**.
+
+The project is currently only a **product catalog/information website**.
+
+---
+
+# IMPORTANT — NO BUYING FEATURES
+
+Do NOT implement:
+
+* Cart
+* Add to Cart
+* Buy Now
+* Checkout
+* Payment
+* Payment gateway
+* UPI payment
+* Credit/debit card payment
+* Cash on Delivery
+* Order placement
+* Order history
+* Shipping calculation
+* Delivery payment
+* Purchase buttons
+
+Do not create fake purchasing functionality.
+
+The website should focus entirely on **discovering and viewing grocery products and their information**.
+
+The payment/e-commerce functionality may be added in a future version.
+
+---
+
+# TECHNOLOGY
+
+Use:
+
+* React
+* Vite
+* JavaScript 
+* React Router
+* Tailwind CSS
+* Responsive design
+* Reusable components
+
+Keep dependencies minimal.
+
+---
+
+# MAIN PAGES
+
+Create:
+
+1. Home
+2. Products
+3. Product Details
+4. Categories
+5. Search Results
+6. About
+7. Contact
+8. 404 Not Found
+
+---
+
+# HEADER
+
+Create a professional header.
+
+Desktop:
+
+```text
+Logo | Products | Categories | Search | About | Contact
+```
+
+Include a prominent search bar.
+
+Mobile:
+
+```text
+☰  Logo  🔍
+```
+
+Use a responsive navigation menu.
+
+Do NOT include cart or shopping icons.
+
+---
+
+# HOME PAGE
+
+Create a professional grocery product catalog homepage.
+
+## Hero
+
+Show:
+
+* Grocery/product catalog title
+* Short description
+* Search bar
+* Browse Products button
+* Professional food/grocery imagery
+
+Example concept:
+
+```text
+Discover the food products you use every day.
+
+Explore products, ingredients, nutrition,
+brands and detailed product information.
+
+[ Explore Products ]
+```
+
+Do not make the hero excessively large.
+
+---
+
+# CATEGORY SECTION
+
+Show categories such as:
+
+* Fruits
+* Vegetables
+* Dairy
+* Bakery
+* Snacks
+* Beverages
+* Breakfast
+* Frozen Food
+* Grains
+* Spices
+* Organic
+* Household
+
+Each category should have:
+
+* Image/icon
+* Category name
+* Number of products
+
+Clicking a category should open the corresponding filtered product page.
+
+---
+
+# FEATURED PRODUCTS
+
+Show selected products.
+
+Product cards should contain:
+
+* Product image
+* Product name
+* Brand
+* Category
+* Weight/size
+* Rating
+* Price for information only
+* Availability
+* View Details button
+
+IMPORTANT:
+
+Price is displayed only as **product information**.
+
+There must be no purchase/cart functionality.
+
+---
+
+# PRODUCTS PAGE
+
+Create a complete product catalog.
+
+Layout:
+
+```text
+Products
+
+Filters                    Products
+
+Category                   Product
+Brand                      Product
+Price Range                Product
+Rating                     Product
+Dietary                    Product
+Availability               Product
+```
+
+On mobile, filters should open in a drawer/modal.
+
+---
+
+# SEARCH
+
+Create a working search system.
+
+Search across:
+
+* Product name
+* Brand
+* Category
+* Ingredients
+* Tags
+* Description
+
+Example:
+
+```text
+Search: chocolate
+```
+
+Results:
+
+```text
+Chocolate Biscuits
+Dark Chocolate
+Chocolate Milk
+Chocolate Cereal
+```
+
+Show:
+
+```text
+Search results for "chocolate"
+24 products found
+```
+
+Provide a useful empty state when nothing matches.
+
+---
+
+# FILTERING
+
+Implement category filtering.
+
+Categories:
+
+```text
+All
+Fruits
+Vegetables
+Dairy
+Bakery
+Snacks
+Beverages
+Breakfast
+Grains
+Spices
+Frozen
+Organic
+```
+
+Also implement:
+
+### Brand
+
+Filter products by brand.
+
+### Price Range
+
+For information/filtering only:
+
+* Under ₹100
+* ₹100–₹250
+* ₹250–₹500
+* Above ₹500
+
+### Rating
+
+* 4★ and above
+* 3★ and above
+
+### Availability
+
+* In Stock
+* Out of Stock
+
+### Dietary
+
+* Vegetarian
+* Vegan
+* Organic
+* Gluten-free
+* Sugar-free where applicable
+
+---
+
+# SORTING
+
+Provide:
+
+* Relevance
+* Price: Low to High
+* Price: High to Low
+* Rating
+* Newest
+* Popularity
+
+Price sorting is only for browsing.
+
+There is no purchasing functionality.
+
+---
+
+# PRODUCT CARD
+
+Create professional product cards.
+
+Example:
+
+```text
+┌─────────────────────┐
+│                     │
+│    PRODUCT IMAGE    │
+│                     │
+├─────────────────────┤
+│ Brand               │
+│ Product Name        │
+│ ⭐ 4.5              │
+│ 500 g               │
+│ ₹249                │
+│                     │
+│ [ View Details ]    │
+└─────────────────────┘
+```
+
+Do not show:
+
+* Add to Cart
+* Buy Now
+* Checkout
+
+---
+
+# PRODUCT DETAILS PAGE
+
+Create a complete product information page.
+
+Show:
+
+* Large product image
+* Additional product images
+* Product name
+* Brand
+* Category
+* Price
+* Weight/size
+* Rating
+* Review count
+* Availability
+* Description
+* Ingredients
+* Nutrition information
+* Storage instructions
+* Manufacturer
+* Country of origin
+* Dietary information
+* Product tags
+* Related products
+
+Price is informational only.
+
+---
+
+# INGREDIENTS
+
+Ingredients must be displayed as **plain readable text**.
+
+Example:
+
+```text
+Ingredients
+
+Whole wheat flour, sugar, vegetable oil,
+milk solids, cocoa powder, salt,
+raising agents and permitted flavors.
+```
+
+Add:
+
+```text
+[ Copy Ingredients ]
+```
+
+After clicking:
+
+```text
+✓ Copied
+```
+
+Use the browser Clipboard API.
+
+---
+
+# COPY PRODUCT DETAILS
+
+Add:
+
+```text
+[ Copy Product Details ]
+```
+
+Copy readable information such as:
+
+```text
+Product: Chocolate Biscuits
+Brand: Example Brand
+Category: Biscuits
+Weight: 200 g
+Price: ₹99
+Rating: 4.5
+
+Ingredients:
+Wheat flour, sugar, cocoa powder,
+vegetable oil, milk solids and salt.
+
+Storage:
+Store in a cool and dry place.
+```
+
+Also add:
+
+```text
+[ Copy Product URL ]
+```
+
+if appropriate.
+
+---
+
+# PRODUCT IMAGES
+
+Every product should have a good image.
+
+Support:
+
+* Main image
+* Multiple images
+* Thumbnail gallery
+* Proper aspect ratio
+* Lazy loading
+* Alt text
+* Optional image zoom
+
+Never stretch images.
+
+If real images are unavailable, use realistic placeholder product images.
+
+---
+
+# PRODUCT DATA
+
+Create realistic sample grocery product data.
+
+Example structure:
+
+```javascript
+{
+  id,
+  name,
+  brand,
+  category,
+  price,
+  rating,
+  reviewCount,
+  image,
+  images,
+  description,
+  ingredients,
+  nutrition,
+  weight,
+  unit,
+  stock,
+  dietary,
+  storageInstructions,
+  manufacturer,
+  countryOfOrigin,
+  tags
+}
+```
+
+Create enough products to make the catalog feel real.
+
+Use multiple:
+
+* Categories
+* Brands
+* Product types
+* Price ranges
+* Dietary types
+
+---
+
+# NUTRITION INFORMATION
+
+Display nutrition in a clean table.
+
+Example:
+
+```text
+Nutrition Information
+
+Energy          450 kcal
+Protein         8 g
+Carbohydrates   65 g
+Sugar           20 g
+Fat             18 g
+Fiber           5 g
+Sodium          250 mg
+```
+
+If a product does not have nutrition data, clearly show:
+
+```text
+Nutrition information unavailable
+```
+
+Do not invent medical/health claims.
+
+---
+
+# RELATED PRODUCTS
+
+At the bottom of the product details page show:
+
+```text
+Related Products
+```
+
+Based on:
+
+* Same category
+* Similar tags
+* Same brand where appropriate
+
+Clicking a related product opens its details page.
+
+---
+
+# CATEGORIES PAGE
+
+Create a complete categories page.
+
+Each category should show:
+
+* Category image
+* Category name
+* Short description
+* Number of products
+
+Clicking a category opens:
+
+```text
+/category/:category
+```
+
+---
+
+# ABOUT PAGE
+
+Create a professional About page.
+
+Explain:
+
+* What the project is
+* Purpose of the product catalog
+* Product information
+* Ingredients information
+* Nutrition information
+* Product discovery
+* Project mission
+* Future possibilities
+
+Do not mention fake company achievements.
+
+Make it feel like a real project/company page.
+
+---
+
+# CONTACT PAGE
+
+Create:
+
+* Contact form
+* Name
+* Email
+* Message
+* Contact information
+* FAQ/help section
+
+Implement frontend validation.
+
+Since there is no backend yet, do not pretend that messages are actually sent.
+
+---
+
+# FOOTER
+
+Include:
+
+```text
+Company
+About
+Contact
+
+Explore
+Products
+Categories
+
+Information
+Ingredients
+Nutrition
+Product Details
+
+Legal
+Privacy Policy
+Terms
+
+Social
+```
+
+Do not include:
+
+* Cart
+* Checkout
+* Orders
+* Payment
+
+---
+
+# RESPONSIVE DESIGN
+
+The website must work properly on:
+
+* Mobile
+* Tablet
+* Laptop
+* Desktop
+
+Desktop:
+
+```text
+Product | Product | Product | Product
+```
+
+Mobile:
+
+```text
+Product | Product
+Product | Product
+```
+
+Create proper responsive layouts rather than simply shrinking desktop elements.
+
+---
+
+# UI STYLE
+
+The website should look like a **real professional grocery product catalog**.
+
+Use:
+
+* Clean typography
+* Professional spacing
+* High-quality images
+* Practical navigation
+* Subtle shadows
+* Moderate border radius
+* Clear hierarchy
+* Natural whitespace
+* Consistent design system
+
+Avoid:
+
+* Excessive gradients
+* Excessive glassmorphism
+* Huge rounded cards
+* Excessive animations
+* Generic AI-looking UI
+* Unnecessary decorative elements
+* Excessive whitespace
+
+The design should feel like it was created by an experienced professional frontend developer.
+
+---
+
+# ACCESSIBILITY
+
+Implement:
+
+* Semantic HTML
+* Accessible buttons
+* Keyboard navigation
+* Proper labels
+* Image alt text
+* Focus states
+* Good contrast
+* Accessible modal/filter drawer
+
+---
+
+# EMPTY STATES
+
+Create proper empty states.
+
+### No Search Results
+
+```text
+No products found.
+
+Try another search term or category.
+```
+
+### No Products in Category
+
+```text
+No products available in this category.
+```
+
+### Product Not Found
+
+```text
+Product not found.
+
+[ Back to Products ]
+```
+
+---
+
+# PERFORMANCE
+
+Implement:
+
+* Lazy-loaded images
+* Efficient rendering
+* Proper React component structure
+* Avoid unnecessary re-renders
+* Responsive images
+* Clean state management
+
+---
+
+# ROUTING
+
+Use React Router.
+
+Routes:
+
+```text
+/
+ /products
+ /products/:id
+ /category/:category
+ /search
+ /categories
+ /about
+ /contact
+```
+
+Support browser back/forward navigation.
+
+---
+
+# PROJECT STRUCTURE
+
+Use a clean structure:
+
+```text
+src/
+ ├── components/
+ │   ├── Header
+ │   ├── Footer
+ │   ├── ProductCard
+ │   ├── ProductGrid
+ │   ├── SearchBar
+ │   ├── FilterSidebar
+ │   ├── CategoryCard
+ │   ├── CopyButton
+ │   ├── NutritionTable
+ │   └── ImageGallery
+ │
+ ├── pages/
+ │   ├── Home
+ │   ├── Products
+ │   ├── ProductDetails
+ │   ├── SearchResults
+ │   ├── Category
+ │   ├── Categories
+ │   ├── About
+ │   ├── Contact
+ │   └── NotFound
+ │
+ ├── data/
+ │   ├── products
+ │   └── categories
+ │
+ ├── hooks/
+ │
+ ├── utils/
+ │   ├── clipboard
+ │   ├── filtering
+ │   └── formatting
+ │
+ ├── App
+ └── main
+```
+
+Improve the structure if necessary.
+
+---
+
+# IMPORTANT FUNCTIONAL REQUIREMENTS
+
+These must actually work:
+
+* Product search
+* Category filtering
+* Brand filtering
+* Price filtering
+* Rating filtering
+* Dietary filtering
+* Availability filtering
+* Sorting
+* Product details
+* Related products
+* Copy ingredients
+* Copy product details
+* Copy product URL
+* Responsive navigation
+* All routes
+* Empty states
+
+Do not leave core features as fake buttons.
+
+---
+
+# DO NOT IMPLEMENT BUYING
+
+Again, this version must NOT contain:
+
+```text
+Cart
+Add to Cart
+Buy Now
+Checkout
+Payment
+UPI
+Card Payment
+Cash on Delivery
+Orders
+Shipping
+Delivery Payment
+```
+
+This is a **product information/catalog website only**.
+
+The purchasing system can be added later with a proper backend and payment API.
+
+---
+
+# FINAL REQUIREMENT
+
+Build the actual working React website, not just a visual mockup.
+
+Use realistic grocery products and detailed product information.
+
+Make the UI polished, professional, responsive, fast, and natural.
+
+The final website should feel like a **real grocery product discovery/catalog platform**, with the buying functionality intentionally excluded for the current version.

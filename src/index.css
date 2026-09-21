@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  ============================================================
+  THEME — change the website colors here.
+  Edit the RGB values below; the whole site re-skins itself.
+  ------------------------------------------------------------
+  3 main colors:
+    - Primary dark  : #121435  (page background)
+    - Light inactive: #faf9f0  (cream text)
+    - Accent light  : #ffa447  (light orange highlights)
+   Everything below is derived from these three.
+  ============================================================
+*/
+:root {
+  /* dark navy backgrounds (primary color) */
+  --n-950: 18 20 53; /* page background        #121435 */
+  --n-925: 23 25 60; /* table headers           #17193c */
+  --n-900: 27 29 70; /* cards & panels          #1b1d46 */
+  --n-850: 22 24 58; /* image placeholders      #16183a */
+  --n-800: 32 35 80;
+  --n-700: 52 56 112; /* scrollbars             #343870 */
+
+  /* cream light text (second color) */
+  --v-50: 255 253 247; /* brightest / headings   #fffdf7 */
+  --v-100: 250 249 240; /* body text             #faf9f0 */
+  --v-200: 238 237 223;
+  --v-300: 213 210 190;
+  --v-400: 178 175 154;
+  --v-500: 142 139 118;
+  --v-600: 110 108 92;
+  --v-700: 85 84 71;
+  --v-800: 61 60 50;
+  --v-900: 43 42 35;
+  --v-950: 27 26 21;
+
+  /* light orange accent (third color) */
+  --b-50: 255 245 235;
+  --b-100: 255 235 214;
+  --b-200: 255 224 191;
+  --b-300: 255 196 137;
+  --b-400: 255 164 71; /* accent on dark bg      #ffa447 */
+  --b-500: 249 143 22; /* accent base            #f98f16 */
+  --b-600: 230 124 10; /* buttons / solid fills  #e67c0a */
+  --b-700: 185 94 5;
+  --b-800: 143 72 5;
+  --b-900: 100 50 4;
+  --b-950: 58 28 1;
+
+  /* semantic flat helpers */
+  --line: 46 49 94; /* solid border            #2e315e */
+  --line-strong: 70 74 130; /* strong border       #464a82 */
+  --ink: 250 249 240; /* primary text           #faf9f0 */
+  --ink-2: 208 206 188; /* secondary text */
+  --ink-3: 155 153 139; /* muted text */
+  --surface-2: 35 38 78; /* raised panels         #23264e */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: rgb(var(--n-950));
+  }
+  body {
+    @apply bg-night-950 text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-brand-600 text-ink;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--n-900));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--n-700));
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--b-600));
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-night-950 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-ink hover:bg-brand-500;
+  }
+  .btn-secondary {
+    @apply btn border border-line bg-night-900 text-ink hover:border-line-strong hover:bg-night-925;
+  }
+  .btn-ghost {
+    @apply btn text-ink-2 hover:bg-surface-2 hover:text-ink;
+  }
+  .input {
+    @apply w-full rounded-lg border border-line bg-night-900 px-3.5 py-2.5 text-sm text-ink placeholder-ink-3 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-ink-2;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-night-900 px-3 py-1 text-xs font-medium text-ink-2;
+  }
+}
+
+/* Custom scrollbar for horizontal thumbnail gallery */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
