@@ -104,7 +104,7 @@ git clone <your-github-repository-url>
 ### 2. Navigate to the project
 
 ```bash
-cd foodbuddy
+cd FoodBuddy-Food-Product-Explorer-Web
 ```
 
 ### 3. Install dependencies
@@ -181,7 +181,7 @@ New products can be added by updating the local product dataset.
 
 ## ⚠️ Disclaimer
 
-FoodBuddy is a portfolio project using locally stored product information. Product information is provided for demonstration purposes and may not represent the actual specifications of commercial products.
+FoodBuddy-Food-Product-Explorer-Web is a portfolio project using locally stored product information. Product information is provided for demonstration purposes and may not represent the actual specifications of commercial products.
 
 ## 👨‍💻 Author
 
